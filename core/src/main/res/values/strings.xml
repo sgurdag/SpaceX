@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE
+	resources[<!ENTITY deeplinkNamespace "rocket-science://"><!ENTITY deeplinkDetailPath "&deeplinkNamespace;detail"><!ENTITY paramRocketId "rocket-id">]>
+
+<resources>
+	<string name="retry">Retry</string>
+
+	<string name="detail_param_rocket_id">&paramRocketId;</string>
+	<string name="detail_deeplink">&deeplinkDetailPath;/{&paramRocketId;}</string>
+	<string name="detail_uri">&deeplinkDetailPath;/%1d</string>
+</resources>

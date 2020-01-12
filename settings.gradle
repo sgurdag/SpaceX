@@ -1,0 +1,2 @@
+include ':app', ':repository', ':core', ':features:rockets'
+rootProject.name = 'SpaceX Rockets'

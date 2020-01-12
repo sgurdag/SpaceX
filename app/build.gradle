@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+
+apply from: "$rootProject.projectDir/scripts/default_android_config.gradle"
+apply from: "$rootProject.projectDir/scripts/sources.gradle"
+
+android {
+    defaultConfig {
+        applicationId "com.spacex.rocketsapp"
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':core')
+    implementation project(':features:rockets')
+
+    implementation libraries.navigation
+
+    debugImplementation libraries.leakCanary
+
+    androidTestImplementation testLibraries.espresso
+
+    // These libraries required by dagger to create dependency graph, but not by app
+    compileOnly project(':repository')
+    compileOnly libraries.retrofit
+    compileOnly libraries.room
+    compileOnly libraries.paging
+    compileOnly libraries.swipeRefreshLayout
+
+    // Need for proper renders in xml previews
+    compileOnly libraries.constraintLayout
+}
