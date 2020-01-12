@@ -3,7 +3,7 @@
 This application has been created by following the directions below.
 
 
-#Test Details
+# Test Details
 
 The purpose of this test is to see how you approach a problem and what your solutions look like. The requirements for this test are simple and should be straightforward to grasp. When implementing a solution, please keep things simple as well.
 Implement SpaceX rocket launches informative application
