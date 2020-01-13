@@ -2,6 +2,18 @@
  
 This application has been created by following the directions below.
 
+Some of the technologies used in the project are :
+
+MVVM<br/>
+Databinding<br/>
+Dagger 2<br/>
+Retrofit<br/>
+Moshi<br/>
+Navigation library<br/>
+Coroutines<br/>
+Picasso <br/>
+Modularization <br/>
+
 
 # Test Details
 
